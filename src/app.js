@@ -9,6 +9,8 @@ import logger from "morgan";
 import indexRouter from "./routes/index";
 const app = express();
 
+app.set("view engine", "twig");
+app.set("views", "./src/views");
 app.use(logger("dev"));
 app.use(express.json()); // bodyParser
 app.use(express.urlencoded({ extended: false }));
