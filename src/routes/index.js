@@ -10,4 +10,7 @@ router.get("/home", function(req, res) {
   res.render("home", { title: "twig home page" });
 });
 
+router.get("/testing", function(req, res) {
+  res.render("testing", { title: "Test con DataTable" });
+});
 export default router;
