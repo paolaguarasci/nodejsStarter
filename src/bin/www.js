@@ -15,6 +15,8 @@ const debug = debugLib("socketiogiocattolo:server");
 
 let port = normalizePort(process.env.PORT || "3000");
 app.set("port", port);
+let ip = process.env.IP || "localhost";
+app.set("ip", ip);
 
 /**
  * Create HTTP server.
